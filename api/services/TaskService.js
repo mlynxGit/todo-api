@@ -26,7 +26,7 @@ module.exports = {
             if (params.hasOwnProperty("description")) {
                 attributes.description = params.description;
             }
-            if (params.hasOwnProperty("user")) {
+            if (params.hasOwnProperty("userId")) {
                 attributes.user = params.userId;
             }
 

@@ -6,6 +6,7 @@
  */
 const constants = require("../../constants/constants");
 const controllerName = "TaskController";
+
 module.exports = {
     /**
      * Create one Task
@@ -184,7 +185,7 @@ module.exports = {
                 case constants.RESOURCE_SUCCESSFULLY_DELETED:
 
                     // Send response
-                    return HttpResponseService.json(200, res, constants.TASK_SUCCESSFULLY_DELETED, responseDelete);
+                    return HttpResponseService.json(200, res, constants.TASK_SUCCESSFULLY_DELETED, responseDelete.data);
 
                 default:
                     return HttpResponseService.internalServerError(req, res, responseDelete);
